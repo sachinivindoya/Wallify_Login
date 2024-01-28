@@ -9,7 +9,7 @@ function SignupScreen() {
   return (
     <View className="bg-white h-full w-full">
         <StatusBar style="light" />
-        <Image className="h-full w-full absolute" source={require('../assets/img/background.png')} />
+        <Image className="h-full w-full absolute" source={require('../assets/img/bg.png.jpg')} />
        
         <View className="flex-row justify-around w-full absolute">
              <Animated.Image 
@@ -60,7 +60,7 @@ function SignupScreen() {
                 </Animated.View>
                  <Animated.View className="w-full" entering={FadeInDown.delay(600).duration(1000).springify()}>
                    <TouchableOpacity className="w-full bg-sky-400 p-3 rounded-2xl mb-3">
-                  <Text className="text-xl font-bold text-white text-center">SignUp</Text>
+                  <Text className="text-xl font-bold text-black text-center">SignUp</Text>
                 </TouchableOpacity>
                   </Animated.View>
                  <Animated.View 
