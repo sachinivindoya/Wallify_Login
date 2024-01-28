@@ -1,4 +1,4 @@
-import { View, Text, Image, SafeAreaView, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, Image, SafeAreaView, TextInput, TouchableOpacity, Pressable } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { useNavigation } from '@react-navigation/native'
@@ -74,7 +74,7 @@ export default function LoginScreen() {
                     className="flex-row justify-center">
 
                     <Text>Don't have an account? </Text>
-                    <TouchableOpacity onPress={()=> navigation.push('Signup')}>
+                    <TouchableOpacity onPress={()=> navigation.navigate('SignUp')}>
                         <Text className="text-sky-600">SignUp</Text>
                     </TouchableOpacity>
                 </Animated.View>
