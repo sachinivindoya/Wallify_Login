@@ -28,7 +28,7 @@ function SignupScreen() {
         <View className="flex items-center">
              <Animated.Text 
                    entering={FadeInUp.duration(1000).springify()} 
-                   className="text-white font-bold tracking-wider text-5xl">
+                   className="text-black font-bold tracking-wider text-5xl">
                    Sign Up
              </Animated.Text>
         </View>
@@ -59,8 +59,8 @@ function SignupScreen() {
                     />
                 </Animated.View>
                  <Animated.View className="w-full" entering={FadeInDown.delay(600).duration(1000).springify()}>
-                   <TouchableOpacity className="w-full bg-sky-400 p-3 rounded-2xl mb-3">
-                  <Text className="text-xl font-bold text-black text-center">SignUp</Text>
+                   <TouchableOpacity className="w-full bg-sky-600 p-3 rounded-2xl mb-3">
+                  <Text className="text-xl font-bold text-white text-center">SignUp</Text>
                 </TouchableOpacity>
                   </Animated.View>
                  <Animated.View 
