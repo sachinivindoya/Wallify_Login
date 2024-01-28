@@ -14,15 +14,15 @@ export default function LoginScreen() {
 
         
         <View className="flex-row justify-around w-full absolute">
+          <Animated.Image 
+             entering={FadeInUp.delay(400).duration(1000).springify()} 
+            source={require('../assets/img/light.png')} 
+            className="h-[160] w-[65] opacity-75" 
+            />
             <Animated.Image 
                 entering={FadeInUp.delay(200).duration(1000).springify()} 
                 source={require('../assets/img/light.png')} 
                 className="h-[225] w-[90]" 
-            />
-            <Animated.Image 
-                entering={FadeInUp.delay(400).duration(1000).springify()} 
-                source={require('../assets/img/light.png')} 
-                className="h-[160] w-[65] opacity-75" 
             />
         </View>
 
@@ -64,7 +64,7 @@ export default function LoginScreen() {
                     className="w-full" 
                     entering={FadeInDown.delay(400).duration(1000).springify()}>
 
-                    <TouchableOpacity className="w-full bg-sky-400 p-3 rounded-2xl mb-3">
+                    <TouchableOpacity className="w-full bg-sky-600 p-3 rounded-2xl mb-3">
                         <Text className="text-xl font-bold text-white text-center">Login</Text>
                     </TouchableOpacity>
                 </Animated.View>
